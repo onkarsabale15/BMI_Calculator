@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/4207869540.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/image/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>BMI Calculator</h1>
+    <div class="container">
+        <div class="form">
+            <label>Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter height">
+            <br>
+            <label>Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter weight">
+            <br>
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            <br>
+            <label>Your BMI:</label>
+            <input type="text" id="result" readonly>
+        </div>
+        <div class="indicator">
+            <h3>BMI Indicator</h3>
+            <p>A BMI of less than 18.5 indicates that you are underweight.</p>
+            <p>A BMI between 18.5 and 24.9 indicates that you are at a healthy weight.</p>
+            <p>A BMI between 25 and 29.9 indicates that you are overweight.</p>
+            <p>A BMI of 30 or greater indicates that you are obese.</p>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
